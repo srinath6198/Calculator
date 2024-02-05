@@ -1,0 +1,187 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculotor</title>
+    <link rel="stylesheet" href="./Calculator.css">
+</head>
+<body>
+    <div class="container">
+ <div class="calculator">
+ <form>
+    <div class="display">
+        <input type="text" id="display">
+    </div>
+    <div>
+        <input type="button" value="AC" id="btnac">
+        <input type="button" value="DELETE" id="delete">
+        <input type="button" value="." id="btn.">
+        <input type="button" value="/" id="btn/">
+    </div>
+    <div>
+    <input type="button" value="7" id="btn7">
+    <input type="button" value="8" id="btn8">
+    <input type="button" value="9" id="btn9">
+    <input type="button" value="*"  id="btn-*">
+    </div>
+    <div>
+        <input type="button" value="4" id="btn4">
+        <input type="button" value="5" id="btn5">
+        <input type="button" value="6" id="btn6">
+        <input type="button" value="-" id="btn-">
+        </div>
+        <div>
+            <input type="button" value="1" id="btn1" >
+            <input type="button" value="2" id="btn2">
+            <input type="button" value="3" id="btn3">
+            <input type="button" value="+" id="btn+">
+            </div>
+            <div>
+                <input type="button" value="00" id="btn00">
+                <input type="button" value="0" id="btn0">
+                <input type="button" value="=" class="equal" id="equal">
+                </div>
+ </form>
+ </div>
+</div>
+<script>
+function ac(){
+    let button=document.getElementById("display")
+    button.value=""
+}
+let buttonac=document.getElementById("btnac")
+buttonac.addEventListener('click',ac)
+
+ function deletefun(){
+    let button=document.getElementById("display")
+    let a=button.value=display.value.slice(0,-1)
+    console.log(a);
+ }
+ let buttondelete=document.getElementById("delete")
+ buttondelete.addEventListener('click',deletefun)
+
+ function dot(){
+    let button=document.getElementById("display")
+    button.value+="."
+ }
+ let buttondot=document.getElementById("btn.")
+ buttondot.addEventListener('click',dot)
+
+function div(){
+    let button=document.getElementById("display")
+    button.value+="/";
+}
+let buttondiv=document.getElementById("btn/")
+buttondiv.addEventListener('click',div)
+
+ function seven(){
+    let button=document.getElementById("display")
+    button.value+="7"
+    // console.log(button.value)
+}
+let button7=document.getElementById("btn7")
+button7.addEventListener('click',seven);
+// button7.addEventListener('keypress',seven);
+
+
+function eight(){
+    let button=document.getElementById("display")
+    button.value+="8"
+}
+let button8=document.getElementById("btn8")
+button8.addEventListener('click',eight);
+
+function nine(){
+    let button=document.getElementById("display")
+    button.value+="9"
+}
+let button9=document.getElementById("btn9")
+button9.addEventListener('click',nine);
+
+function mult(){
+    let button=document.getElementById("display")
+    button.value+="*"
+}
+let buttonmult=document.getElementById("btn-*")
+buttonmult.addEventListener('click',mult);
+function four(){
+    let button=document.getElementById("display")
+    button.value+="4"
+}
+let button4=document.getElementById("btn4")
+button4.addEventListener('click',four);
+
+function five(){
+    let button=document.getElementById("display")
+    button.value+="5"
+}
+let button5=document.getElementById("btn5")
+button5.addEventListener('click',five);
+ function six(){
+    let button=document.getElementById("display")
+    button.value+="6"
+ }
+ let button6=document.getElementById('btn6')
+ button6.addEventListener('click',six)
+
+ function sub(){
+    let button=document.getElementById("display")
+    button.value+="-"
+ }
+ let buttonsub=document.getElementById("btn-")
+ buttonsub.addEventListener('click', sub)
+
+function three(){
+    let button=document.getElementById("display")
+    button.value+="3"
+}
+let button3=document.getElementById("btn3")
+button3.addEventListener('click',three
+)
+
+function two(){
+    let button=document.getElementById("display")
+    button.value+="2"
+}
+let button2=document.getElementById("btn2")
+button2.addEventListener('click',two)
+
+ function one(){
+    let button=document.getElementById("display")
+    button.value+="1"
+ }
+ let button1=document.getElementById("btn1")
+ button1.addEventListener('click',one);
+
+function add(){
+    let button=document.getElementById("display")
+button.value+="+"
+}
+let buttonadd=document.getElementById("btn+")
+buttonadd.addEventListener('click',add)
+
+function doublezero(){
+    let button=document.getElementById("display")
+    button.value+='00'
+}
+let button00=document.getElementById("btn00")
+button00.addEventListener('click',doublezero)
+
+function zero(){
+    let button=document.getElementById("display")
+    button.value+="0"
+}
+let button0=document.getElementById("btn0")
+button0.addEventListener('click',zero)
+
+function equalto(){
+    let button=document.getElementById("display")
+   let a=button.value=eval(display.value)
+//    console.log(a);
+}
+let equalbtn=document.getElementById("equal")
+equalbtn.addEventListener('click',equalto)
+</script>
+</body>
+</html>
